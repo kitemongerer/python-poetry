@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: flask-poetry
-    env: python
+    name: flask-poetry-kitemongerer
+    runtime: python
     plan: starter
     buildCommand: poetry install
     startCommand: gunicorn app:app --chdir ./poetry_flask
